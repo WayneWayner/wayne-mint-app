@@ -179,7 +179,7 @@ Transactions saved to: /home/waynewayner/git/wayne-rollup/wayne-mint-app/broadca
 After you successfully deployed it to ethermint you can call the functions with the given contract address
 ```
 export CONTRACT_ADDRESS=0x8d8049b46572cc5864da74066354a724d88c6db7
-cast send $CONTRACT_ADDRESS "setMessage(string)" "Hello World" --private-key $ANVIL_KEY --rpc-url http://localhost:8545
+cast send $CONTRACT_ADDRESS "setMessage(string)" "Hello World" --private-key $PRIVATE_KEY --rpc-url http://localhost:8545
 cast call $CONTRACT_ADDRESS "getMessage()(string)" --rpc-url http://localhost:8545
 ```
 
